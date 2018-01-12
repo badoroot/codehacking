@@ -12,9 +12,6 @@ use App\Http\Requests\UsersEditRequest;
 class adminUsersController extends Controller
 {
 
-    public function __construct(){
-        $this->middleware("auth");
-    }
 
     public function index()
     {
@@ -93,6 +90,8 @@ class adminUsersController extends Controller
 
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect('/admin/users');
     }
 }

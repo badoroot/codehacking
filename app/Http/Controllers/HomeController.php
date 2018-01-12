@@ -26,6 +26,6 @@ class HomeController extends Controller
     {
         return view('home');
 
-        //return Auth::user()->role()->get();
+        //return Auth::user()->isAdmin();
     }
 }

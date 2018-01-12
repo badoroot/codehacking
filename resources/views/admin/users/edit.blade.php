@@ -39,9 +39,16 @@
                 <span class="error">@if($errors->has('file')) {{$errors->first('file')}} @endif</span>
             </div>
             <div class="form-group">
-                {!! Form::submit("Add",['class' =>'btn btn-primary']) !!}
+                {!! Form::submit("Update User",['class' =>'btn btn-primary']) !!}
             </div>
             {!! Form::close() !!}
-        </div>
+
+
+            {!! Form::open(['action' => ['adminUsersController@destroy',$user->id] ,'method' =>'DELETE']) !!}
+            <div class="form-group">
+                {!! Form::submit("Delete User",['class' =>'btn btn-danger']) !!}
+            </div>
+            {!! Form::close() !!}
+    </div>
     </div>
 @stop
