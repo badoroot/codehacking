@@ -80,7 +80,7 @@
 
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-edit"></i> <span>Users</span>
+                        <i class="fa fa-users"></i> <span>Users</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -94,15 +94,14 @@
 
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-edit"></i> <span>Posts</span>
+                        <i class="fa fa-tags"></i> <span>Posts</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                        <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                        <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+                        <li><a href="/admin/posts"><i class="fa fa-circle-o"></i> All Posts</a></li>
+                        <li><a href="/admin/posts/create"><i class="fa fa-circle-o"></i> Create User</a></li>
                     </ul>
                 </li>
 
@@ -130,7 +129,7 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper" style="background: #fff;">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
@@ -144,7 +143,7 @@
         </section>
 
         <!-- Main content -->
-        <section class="content" style="background: #fff;">
+        <section class="content" >
             <!-- Small boxes (Stat box) -->
             @yield('content')
 
